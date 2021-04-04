@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import HomeScreen from "./screns/HomeScreen";
 import ProductScreen from "./screns/ProductScreen";
 
-import { BrowserRouter, Route, Seitch } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
