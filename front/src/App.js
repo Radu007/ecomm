@@ -5,6 +5,9 @@ import Footer from "./components/Footer";
 import HomeScreen from "./screns/HomeScreen";
 import ProductScreen from "./screns/ProductScreen";
 import CartScreen from "./screns/CartScreen";
+import LoginScreen from "./screns/LoginScreen";
+import RegisterScreen from "./screns/RegisterScreen";
+import ProfileScreen from "./screns/ProfileScreen";
 
 import { BrowserRouter, Route } from "react-router-dom";
 function App({ match }) {
@@ -13,6 +16,9 @@ function App({ match }) {
       <Header />
       <main className="py-3">
         <Container>
+          <Route path="/login" component={LoginScreen} />
+          <Route path="/register" component={RegisterScreen} />
+          <Route path="/profile" component={ProfileScreen} />
           <Route path="/" component={HomeScreen} exact />
           <Route path="/product/:id" component={ProductScreen} />
           <Route path="/cart/:id?" component={CartScreen} />
